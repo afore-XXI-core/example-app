@@ -10,7 +10,7 @@ node {
 	}
 
 	stage('Push image'){
-		docker.withRegistry('https://registry.hub.docker.com', 'Credenciales hacia GitHub'){
+		docker.withRegistry('https://registry.hub.docker.com', 'push docker hub'){
 			app.push('latest')
 		}
 	}
