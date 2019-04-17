@@ -6,7 +6,7 @@ node {
 	}
 
 	stage('Build image'){
-		app = docker.build('afore-xxi-core/example-app')
+		app = docker.build('angelgalicia/example-app')
 	}
 
 	stage('Push image'){
